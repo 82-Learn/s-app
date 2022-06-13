@@ -5,7 +5,7 @@
 
 .App-header {
     background-color: #1f5bd1;
-    background-image: url('./assets/background.jpeg');
+    background-image: url('./assets/background.png');
     min-height: 100vh;
     display: flex;
     flex-direction: column;
