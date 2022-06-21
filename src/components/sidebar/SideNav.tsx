@@ -56,7 +56,7 @@ const Sidebar: FC = () => {
                 <NavIcon onMouseEnter={() => setSidebar(true)}>
                     <GiHamburgerMenu  />
                 </NavIcon>
-                <SidebarNav sidebar={sidebar} onMouseLeave={() => setSidebar(false)}>
+                <SidebarNav sidebar={sidebar} onMouseLeave={() => setSidebar(false)} onClick={() => setSidebar(false)}>
                     <CardImage background={imgUrl}>
                         <div>
                             {SidebarData.map((item, index) => {

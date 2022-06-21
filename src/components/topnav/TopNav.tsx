@@ -7,6 +7,7 @@ import myImage from '../../assets/favicon.png';
 const Topbarbase = styled.nav`
    background: transparent;
    top: 0;
+   left: 0;
    background-color: rgb(26, 26, 26);
 
    font-size: 1rem;
@@ -17,17 +18,11 @@ const Topbarbase = styled.nav`
 `;
 
 
-const Wrapper = styled.div`
-  
-   display: flex;
 
-    
-
-`;
 
 const NavLinks = styled.ul`
   & a {
-    margin-left: 20px;
+   
     font-size: 15px;
     color: white;
     text-transform: uppercase;
@@ -39,6 +34,8 @@ const NavLinks = styled.ul`
     border: 2px solid #ff6600;
     font-weight: bold;
     border-radius: 10px;
+
+
 
   }
 `;
@@ -62,6 +59,14 @@ const NavLogo = styled.ul`
   }
 `;
 
+const Button = styled.div`
+margin-right: 50px;
+ display: inline-block;
+margin-top: 15px;
+margin-bottom: 15px;
+ line-height: 30px;
+`;
+
 const TopNav = () => {
     return (
         <Topbarbase>
@@ -70,10 +75,12 @@ const TopNav = () => {
                 <Link to="/"></Link>
             </NavLogo>
             <NavLinks>
-                <Wrapper>
+               <Button>
                     <Link to="/">Login</Link>  
+                </Button>
+                <Button>
                     <Link to="/">Register</Link>
-                </Wrapper>
+                    </Button>
             </NavLinks>
         </Topbarbase>
     );
