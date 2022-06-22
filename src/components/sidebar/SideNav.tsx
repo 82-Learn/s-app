@@ -1,5 +1,5 @@
 import * as React from "react";
-import { FC,  useState } from "react";
+import { FC, useState } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -10,7 +10,7 @@ import imgUrl from "../sidebar/assets/img1.png";
 const SidebarNav = styled.div<{ sidebar: boolean }>`
   position: absolute;
   left: 0;
-  top: -16px;
+  top: 11px;
   bottom: 0px;
   width: 20%;
   min-width: 200px;
@@ -19,7 +19,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
   padding: 5.5em 0.1em;
   transition: transform 300ms;
   border-radius: 20px;
-   cursor: pointer;
+  cursor: pointer;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   @media (max-width: 1024px) {
     width: auto;
@@ -38,36 +38,39 @@ export const CardImage = styled.div<{ background: string }>`
 const NavIcon = styled.div`
   font-size: 2.1rem;
   margin-left: 2rem;
-  line-height: 1em;
+  line-height: 2em;
   padding: 16px 16px;
   border-radius: 5px;
   float: left;
-  
+
   cursor: pointer;
 `;
 
 const Sidebar: FC = () => {
-    const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
 
-
-    return (
-        <>
-            <IconContext.Provider value={{ color: "white" }}>
-                <NavIcon onMouseEnter={() => setSidebar(true)}>
-                    <GiHamburgerMenu  />
-                </NavIcon>
-                <SidebarNav sidebar={sidebar} onMouseLeave={() => setSidebar(false)} onClick={() => setSidebar(false)}>
-                    <CardImage background={imgUrl}>
-                        <div>
-                            {SidebarData.map((item, index) => {
-                                return <Submenu item={item} key={index} />;
-                            })}
-                        </div>
-                    </CardImage>
-                </SidebarNav>
-            </IconContext.Provider>
-        </>
-    );
+  return (
+    <>
+      <IconContext.Provider value={{ color: "white" }}>
+        <NavIcon onMouseEnter={() => setSidebar(true)}>
+          <GiHamburgerMenu />
+        </NavIcon>
+        <SidebarNav
+          sidebar={sidebar}
+          onMouseLeave={() => setSidebar(false)}
+          onClick={() => setSidebar(false)}
+        >
+          <CardImage background={imgUrl}>
+            <div>
+              {SidebarData.map((item, index) => {
+                return <Submenu item={item} key={index} />;
+              })}
+            </div>
+          </CardImage>
+        </SidebarNav>
+      </IconContext.Provider>
+    </>
+  );
 };
 
 export default Sidebar;

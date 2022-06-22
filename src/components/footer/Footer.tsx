@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import moment from 'moment';
-
+import moment from "moment";
 
 const StyledFooter = styled.div`
   background-color: rgb(26, 26, 26);
@@ -9,6 +8,7 @@ const StyledFooter = styled.div`
   /* equal to footer height */
   margin-bottom: -142px;
   color: white;
+  width: 100%;
 `;
 
 const Row = styled.div`
@@ -41,7 +41,6 @@ const Container = styled.div`
   max-width: 0 auto;
   margin: 0 auto;
 `;
-
 
 const FooterLink2 = styled.div`
   color: white;
@@ -80,21 +79,10 @@ const Footer = () => (
         </Column>
       </Row>
       <Copyright>
-        <p>Copyright &copy; 82 Learn Pty Ltd {moment().format('YYYY')}.</p>
+        <p>Copyright &copy; 82 Learn Pty Ltd {moment().format("YYYY")}.</p>
       </Copyright>
     </Container>
   </StyledFooter>
 );
 
 export default Footer;
-
-
-
-
-
-
-
-
-
-
-
