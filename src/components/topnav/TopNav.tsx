@@ -55,8 +55,10 @@ const NavLogo = styled.ul`
 `;
 
 const Button = styled.div`
+  display: inline-flexbox;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-right: 20px;
-  display: inline-block;
   margin-top: 10px;
   margin-bottom: 15px;
   line-height: 30px;

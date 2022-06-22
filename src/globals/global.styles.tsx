@@ -11,13 +11,9 @@ export const GlobalStyle = createGlobalStyle`
 
 }
 
-justify-content: center;
-    text-rendering: optimizeLegibility;
-    height: 100vh;
-    align-items: center;
-    }
   button {
     cursor: pointer;
-  }
+  } 
+}
 
 `;
