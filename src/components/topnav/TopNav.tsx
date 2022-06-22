@@ -15,6 +15,9 @@ const Topbarbase = styled.nav`
   width: 100%;
   z-index: 10;
   border-bottom: 1px solid white;
+  @media (max-width: 100%) {
+    width: 80%;
+  }
 `;
 
 const NavLinks = styled.ul`

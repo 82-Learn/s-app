@@ -22,10 +22,9 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
   cursor: pointer;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   @media (max-width: 1024px) {
-    width: auto;
+    width: 80%;
   }
 `;
-
 export const CardImage = styled.div<{ background: string }>`
   grid-area: image;
   background-image: url(${({ background }) => background});
