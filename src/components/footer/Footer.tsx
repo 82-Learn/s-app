@@ -38,6 +38,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   max-width: 0 auto;
   margin: 0 auto;
 `;

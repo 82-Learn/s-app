@@ -48,7 +48,6 @@ const NavLogo = styled.ul`
     cursor: pointer;
     background-color: rgb(26, 26, 26);
     line-height: 1em;
-    border: 2px solid #ff6600;
     font-weight: bold;
     border-radius: 10px;
   }

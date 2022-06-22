@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { SidebarItem } from "./models/SidebarItem";
 
 type SidebarLinkProps = {
-    item: SidebarItem;
+  item: SidebarItem;
 };
 
 const SidebarLink = styled(Link)`
@@ -30,14 +30,14 @@ const SidebarLabel = styled.span`
 `;
 
 export const Submenu: FC<SidebarLinkProps> = ({ item }) => {
-    return (
-        <>
-            <SidebarLink to={item.path}>
-                <div>
-                    {item.icon}
-                    <SidebarLabel>{item.title}</SidebarLabel>
-                </div>
-            </SidebarLink>
-        </>
-    );
+  return (
+    <>
+      <SidebarLink to={item.path}>
+        <div>
+          {item.icon}
+          <SidebarLabel>{item.title}</SidebarLabel>
+        </div>
+      </SidebarLink>
+    </>
+  );
 };

@@ -57,13 +57,9 @@ const Sidebar: FC = () => {
         >
           <GiHamburgerMenu />
         </NavIcon>
-        <SidebarNav
-          sidebar={sidebar}
-          onMouseLeave={() => setSidebar(false)}
-          onClick={() => setSidebar(false)}
-        >
+        <SidebarNav sidebar={sidebar} onMouseLeave={() => setSidebar(false)}>
           <CardImage background={imgUrl}>
-            <div>
+            <div onClick={() => setSidebar(false)}>
               {SidebarData.map((item, index) => {
                 return <Submenu item={item} key={index} />;
               })}
