@@ -7,8 +7,12 @@ const StyledFooter = styled.div`
   min-height: 10%;
   /* equal to footer height */
   margin-bottom: -142px;
+  margin: auto;
   color: white;
   width: 100%;
+  @media (max-width: 100%) {
+    width: 80%;
+  }
 `;
 
 const Row = styled.div`
