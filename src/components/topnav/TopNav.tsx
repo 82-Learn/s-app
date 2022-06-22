@@ -28,7 +28,7 @@ const NavLinks = styled.ul`
     text-decoration: none;
     padding: 16px 16px;
     cursor: pointer;
-    background-color: #ff6600;
+    background-color: rgb(26, 26, 26);
     line-height: 1em;
     border: 2px solid #ff6600;
     font-weight: bold;
@@ -60,6 +60,7 @@ const Button = styled.div`
   margin-top: 10px;
   margin-bottom: 15px;
   line-height: 30px;
+  justify-content: flex-end !important;
 `;
 
 const TopNav = () => {

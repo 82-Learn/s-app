@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-    body {
-
+    body {  
   background-color: rgb(26, 26, 26);
 /* Portrait and Landscape */
 @media only screen 
