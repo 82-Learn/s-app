@@ -51,11 +51,8 @@ const Sidebar: FC = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "white" }}>
-        <NavIcon
-          onMouseEnter={() => setSidebar(true)}
-          onClick={() => setSidebar(true)}
-        >
-          <GiHamburgerMenu />
+        <NavIcon onMouseEnter={() => setSidebar(true)}>
+          <GiHamburgerMenu onClick={() => setSidebar(true)} />
         </NavIcon>
         <SidebarNav
           sidebar={sidebar}

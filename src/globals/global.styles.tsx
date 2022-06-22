@@ -10,6 +10,11 @@ export const GlobalStyle = createGlobalStyle`
   and (-webkit-min-device-pixel-ratio: 3) { 
 
 }
+
+justify-content: center;
+    text-rendering: optimizeLegibility;
+    height: 100vh;
+    align-items: center;
     }
   button {
     cursor: pointer;
