@@ -5,7 +5,6 @@ import Layout from "./components/layout/Layout";
 import AppRouter from "./components/routes/AppRouter";
 import { GlobalStyle } from "./globals/global.styles";
 
-
 function App() {
   return (
     <Fragment>
