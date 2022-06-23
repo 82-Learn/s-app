@@ -20,11 +20,11 @@ const StyledFooter = styled.div`
 
 
 const Row = styled.div`
-   display: inline-grid;
+  display: inline-grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
   grid-gap: 100px;
-margin-right: 20%;
-margin-left: 20%;
+  margin-right: 20%; 
+  margin-left: 20%;
 `;
 
 const Column = styled.div`
