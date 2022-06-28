@@ -18,7 +18,6 @@ const Topbarbase = styled.nav`
   @media (max-width: 100%) {
     width: 80%;
   }
-  
 `;
 
 const NavLinks = styled.ul`
@@ -34,9 +33,8 @@ const NavLinks = styled.ul`
     border: 2px solid #ff6600;
     font-weight: bold;
     border-radius: 10px;
-       display: inline-grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
-    
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
   }
 `;
 

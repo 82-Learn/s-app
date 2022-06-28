@@ -15,7 +15,7 @@ const BaseComponent = styled.div`
 const LoginPage = () => (
   <BaseComponent>
     <h1>UNDER DEV!</h1>
-    <p>currently typing...</p>
+    <p>in type mode...</p>
   </BaseComponent>
 );
 
