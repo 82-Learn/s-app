@@ -73,10 +73,10 @@ const TopNav = () => {
       </NavLogo>
       <NavLinks>
         <Button>
-          <Link to="/">Login</Link>
+          <Link to="/login">Login</Link>
         </Button>
         <Button>
-          <Link to="/">Register</Link>
+          <Link to="/register">Register</Link>
         </Button>
       </NavLinks>
     </Topbarbase>
