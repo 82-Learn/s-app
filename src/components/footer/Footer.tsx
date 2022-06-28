@@ -8,18 +8,23 @@ const StyledFooter = styled.div`
   /* equal to footer height */
   margin-bottom: -142px;
   margin: auto;
+  align-items: center;
   color: white;
   width: 100%;
+  text-align:center;
   @media (max-width: 100%) {
     width: 80%;
   }
 `;
 
+
+
 const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 25%));
-  grid-gap: 50px;
-  padding-left: 130px;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-gap: 100px;
+  margin-right: 20%; 
+  margin-left: 20%;
 `;
 
 const Column = styled.div`
@@ -28,7 +33,7 @@ const Column = styled.div`
   text-align: center;
   margin-left: 0 auto;
   margin-right: 0 auto;
-  align-items: center;
+
 `;
 
 const Heading = styled.h5`
@@ -45,6 +50,7 @@ const Container = styled.div`
   text-align: center;
   max-width: 0 auto;
   margin: 0 auto;
+  text-align:center;
 `;
 
 const FooterLink2 = styled.div`
