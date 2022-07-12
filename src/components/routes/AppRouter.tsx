@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../home/HomePage";
 import NotFound from "../pages/notfound/Notfound";
 import LoginPage from "../user/login/LoginPage";
-import RegisterPage from "../user/register/RegisterPage";
+import Dashboard from "../Dashboard/Dash";
 
 const AppRouter = () => {
   return (
@@ -22,7 +22,7 @@ const AppRouter = () => {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dash" element={<Dashboard />} />
           <Route path="/*" element={<NotFound />} />
         </Route>
       </Routes>

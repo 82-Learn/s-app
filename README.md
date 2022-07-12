@@ -1,3 +1,3 @@
-# About this product
+# QR CODES + FAST PAYMENTS
 
-This project is about payment using blockchain tech.
+This project aims to replace the accounts department.

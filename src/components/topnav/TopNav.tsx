@@ -4,7 +4,7 @@ import SideNav from "../sidebar/SideNav";
 import { Link } from "react-router-dom";
 import myImage from "../../assets/favicon.png";
 
-const Topbarbase = styled.nav`
+export const Topbarbase = styled.nav`
   background: transparent;
   top: 0;
   left: 0;
@@ -77,9 +77,6 @@ const TopNav = () => {
       <NavLinks>
         <Button>
           <Link to="/login">Login</Link>
-        </Button>
-        <Button>
-          <Link to="/register">Register</Link>
         </Button>
       </NavLinks>
     </Topbarbase>

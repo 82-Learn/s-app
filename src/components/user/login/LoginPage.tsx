@@ -1,6 +1,12 @@
 import * as React from "react";
 import styled from "styled-components";
 
+//import { Amplify } from "aws-amplify";
+//import { AmplifyAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+//import awsconfig from "../../../aws-exports";
+
+//Amplify.configure(awsconfig);
+
 const BaseComponent = styled.div`
   min-height: 100vh;
   display: flex;
@@ -13,10 +19,12 @@ const BaseComponent = styled.div`
 `;
 
 const LoginPage = () => (
+  //<AmplifyAuthenticator>
   <BaseComponent>
-    <h1>UNDER DEV!</h1>
-    <p>in type mode...</p>
+    <h1>Redirect here to dash</h1>
+    <p>Hello</p>
   </BaseComponent>
+  // </AmplifyAuthenticator>
 );
 
 export default LoginPage;

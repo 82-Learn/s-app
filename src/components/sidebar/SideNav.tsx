@@ -21,7 +21,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
   border-radius: 20px;
   cursor: pointer;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  @media (max-width: 1024px) {
+  @media (max-width: 124px) {
     width: 80%;
   }
 `;
