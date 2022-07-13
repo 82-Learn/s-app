@@ -1,5 +1,9 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import styled from "styled-components";
+
+import { API } from "aws-amplify";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
 const BaseComponent = styled.div`
   min-height: 100vh;
@@ -12,10 +16,21 @@ const BaseComponent = styled.div`
   background-color: black;
 `;
 
-const LoginPage = () => (
-  <BaseComponent>
-    <h1>Login in here</h1>
-  </BaseComponent>
-);
+const LoginPage = () => {
+  const [greeting, setGreeting] = useState("loading");
+  useEffect(() => {
+    fetchGreeting();
+  }, []);
+  async function fetchGreeting() {
+    const greetingData = await API.get("api1", "/accounts", {});
+    setGreeting(greetingData.message);
+  }
 
-export default LoginPage;
+  return (
+    <BaseComponent>
+      <h2>{greeting}</h2>
+      <AmplifySignOut />
+    </BaseComponent>
+  );
+};
+export default withAuthenticator(LoginPage);

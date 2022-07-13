@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/accounts": {
+      "name": "/accounts",
+      "lambdaFunction": "sbackend3b9534d5",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
