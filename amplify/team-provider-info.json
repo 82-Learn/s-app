@@ -1,0 +1,40 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sbackend-prod-50134-authRole",
+      "UnauthRoleArn": "arn:aws:iam::412177034505:role/amplify-sbackend-prod-50134-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::412177034505:role/amplify-sbackend-prod-50134-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-sbackend-prod-50134-deployment",
+      "UnauthRoleName": "amplify-sbackend-prod-50134-unauthRole",
+      "StackName": "amplify-sbackend-prod-50134",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:412177034505:stack/amplify-sbackend-prod-50134/0d793750-0215-11ed-a1cc-02c225e8819a",
+      "AmplifyAppId": "ddcsxjumrb0lm"
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sbackend-dev-51437-authRole",
+      "UnauthRoleArn": "arn:aws:iam::412177034505:role/amplify-sbackend-dev-51437-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::412177034505:role/amplify-sbackend-dev-51437-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-sbackend-dev-51437-deployment",
+      "UnauthRoleName": "amplify-sbackend-dev-51437-unauthRole",
+      "StackName": "amplify-sbackend-dev-51437",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:412177034505:stack/amplify-sbackend-dev-51437/dfa56d10-0216-11ed-a13c-06f90e9a3074",
+      "AmplifyAppId": "ddcsxjumrb0lm",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-sbackend-dev-51437-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "undefined": {}
+      },
+      "function": {
+        "sbackend3b9534d5": {
+          "deploymentBucketName": "amplify-sbackend-dev-51437-deployment",
+          "s3Key": "amplify-builds/sbackend3b9534d5-4379726e773654397657-build.zip"
+        }
+      }
+    }
+  }
+}
