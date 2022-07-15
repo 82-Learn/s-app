@@ -7,13 +7,15 @@ import { GlobalStyle } from "./globals/global.styles";
 
 function App() {
   return (
-    <Fragment>
-      <GlobalStyle />
-      <Layout>
-        <AppRouter />
-      </Layout>
-      <Footer />
-    </Fragment>
+    <>
+      <Fragment>
+        <GlobalStyle />
+        <Layout>
+          <AppRouter />
+        </Layout>
+        <Footer />
+      </Fragment>
+    </>
   );
 }
 
