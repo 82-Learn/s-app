@@ -18,7 +18,7 @@ const BaseComponent = styled.div`
 const Transfer = () => {
     return (
         <BaseComponent>
-            <p>START TRANSFER PAGE</p>
+            <p>ACCOUNTS</p>
         </BaseComponent>
     );
 };
