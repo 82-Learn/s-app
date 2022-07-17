@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
     "@aws-amplify/auth": "^4.5.8",
     "@aws-amplify/interactions": "^4.0.44",
     "@aws-amplify/storage": "^4.4.27",
@@ -18,6 +19,7 @@
     "@types/semantic-ui": "^2.2.7",
     "@types/styled-components": "^5.1.25",
     "aws-amplify": "^4.3.26",
+    "history": "^5.3.0",
     "moment": "^2.29.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",

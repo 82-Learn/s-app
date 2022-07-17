@@ -3,6 +3,11 @@ import styled from "styled-components";
 import SideNav from "../sidebar/SideNav";
 import { Link } from "react-router-dom";
 import myImage from "../../assets/favicon.png";
+import LoginButton from "../loginButton";
+import LogoutButton from "../logoutButton";
+import { useAuth0 } from "@auth0/auth0-react";
+
+
 
 export const Topbarbase = styled.nav`
   background: transparent;
@@ -55,30 +60,33 @@ const NavLogo = styled.ul`
   }
 `;
 
-const Button = styled.div`
-  display: inline-flexbox;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align: center;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  line-height: 30px;
-  justify-content: flex-end !important;
-`;
+
+
+
 
 const TopNav = () => {
+  const {
+    isAuthenticated
+  } = useAuth0();
+ 
   return (
     <Topbarbase>
       <SideNav />
       <NavLogo>
         <Link to="/"></Link>
       </NavLogo>
-      <NavLinks>
-        <Button>
-          <Link to="/login">Login</Link>
-        </Button>
-      </NavLinks>
+   
+        {!isAuthenticated && (
+        <NavLinks>
+          <LoginButton />
+          </NavLinks>
+        )}
+        {isAuthenticated && (
+          <NavLinks>
+            <LogoutButton />
+        </NavLinks>
+        )}
+
     </Topbarbase>
   );
 };
