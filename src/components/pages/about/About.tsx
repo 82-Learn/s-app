@@ -16,7 +16,7 @@ const About = () => {
   return (
     <BaseComponent>
       <p>ABOUT PAGE</p>
-      <h1>Testing ths page</h1>
+      <p>Testing ths page</p>
     </BaseComponent>
   );
 };
