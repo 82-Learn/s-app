@@ -1,36 +1,37 @@
-import * as React from "react"
+import * as React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import styled from "styled-components";
+
 const Button = styled.button`
-      font-size: 15px;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 16px 16px;
-    cursor: pointer;
-    background-color: rgb(26, 26, 26);
-    line-height: 1em;
-    border: 2px solid #ff6600;
-    font-weight: bold;
-    border-radius: 10px;
-    display: inline-grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 16px;
+  cursor: pointer;
+  background-color: rgb(26, 26, 26);
+  line-height: 1em;
+  border: 2px solid #ff6600;
+  font-weight: bold;
+  border-radius: 10px;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
 `;
 
 const LogoutButton = () => {
-    const { logout } = useAuth0();
-    const result = window.location.origin;
-    return (
-        <Button
-            onClick={() =>
-                logout({
-                    returnTo: result
-                })
-            }
-        >
-        Log Out
-        </Button>
-    );
+  const { logout } = useAuth0();
+  const result = window.location.origin;
+  return (
+    <Button
+      onClick={() =>
+        logout({
+          returnTo: result,
+        })
+      }
+    >
+      Log Out
+    </Button>
+  );
 };
 
 export default LogoutButton;

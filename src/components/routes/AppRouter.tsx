@@ -1,5 +1,5 @@
 import React from "react";
-import Transfer from "../pages/new-transfer/New-Transfer";
+import Accounts from "../pages/account/Accounts";
 import Terms from "../pages/terms/Terms";
 import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
@@ -7,8 +7,7 @@ import TopNav from "../topnav/TopNav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../home/HomePage";
 import NotFound from "../pages/notfound/Notfound";
-import LoginPage from "../user/login/LoginPage";
-import Dash from "../Auth/Dashboard/Dash";
+import Dash from "../dashboard/Dash";
 
 const AppRouter = () => {
   return (
@@ -17,11 +16,10 @@ const AppRouter = () => {
       <Routes>
         <Route>
           <Route path="/" element={<HomePage />} />
-          <Route path="/accounts" element={<Transfer />} />
+          <Route path="/accounts" element={<Accounts />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/dash" element={<Dash />} />
           <Route path="/*" element={<NotFound />} />
         </Route>

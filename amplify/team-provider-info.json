@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sapp2-dev-35811-authRole",
+      "UnauthRoleArn": "arn:aws:iam::412177034505:role/amplify-sapp2-dev-35811-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::412177034505:role/amplify-sapp2-dev-35811-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-sapp2-dev-35811-deployment",
+      "UnauthRoleName": "amplify-sapp2-dev-35811-unauthRole",
+      "StackName": "amplify-sapp2-dev-35811",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:412177034505:stack/amplify-sapp2-dev-35811/86297660-0855-11ed-8550-0af19cf4ce94",
+      "AmplifyAppId": "d249t1a5yxgcrs"
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sapp2-prod-40929-authRole",
+      "UnauthRoleArn": "arn:aws:iam::412177034505:role/amplify-sapp2-prod-40929-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::412177034505:role/amplify-sapp2-prod-40929-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-sapp2-prod-40929-deployment",
+      "UnauthRoleName": "amplify-sapp2-prod-40929-unauthRole",
+      "StackName": "amplify-sapp2-prod-40929",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:412177034505:stack/amplify-sapp2-prod-40929/1a19f880-0857-11ed-9288-02a28d7d074a",
+      "AmplifyAppId": "d249t1a5yxgcrs"
+    },
+    "categories": {
+      "function": {
+        "gofunction1": {
+          "deploymentBucketName": "amplify-sapp2-prod-40929-deployment",
+          "s3Key": "amplify-builds/gofunction1-66547352365554494753-build.zip"
+        }
+      }
+    }
+  }
+}

@@ -26,8 +26,7 @@ export const CardContainer = styled.div`
 const HomePage = () => {
   return (
     <BaseComponent>
-      <p>Home</p>
-      <p>82 PAY</p>
+      <h2>82 PAY</h2>
       <CardContainer>
         <Card
           title={"A"}

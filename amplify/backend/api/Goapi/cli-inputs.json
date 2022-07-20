@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/accounts": {
+      "name": "/accounts",
+      "lambdaFunction": "gofunction1",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
