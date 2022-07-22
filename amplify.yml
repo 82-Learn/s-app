@@ -35,7 +35,7 @@ backend:
   build:
     commands:
       # Build our go application
-      #  - go build -o main
+      - go build -o main
       - amplifyPush --simple
 frontend:
   phases:
